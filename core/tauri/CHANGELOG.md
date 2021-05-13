@@ -1,5 +1,19 @@
 # Changelog
 
+## \[1.0.0-beta.2]
+
+- Expose mutable getters for the rest of the public `Context` getters.
+
+- `pub fn assets_mut(&mut self) -> &mut Arc<A>`
+
+- `pub fn default_window_icon_mut(&mut self) -> &mut Option<Vec<u8>>`
+
+- `pub fn system_tray_icon_mut(&mut self) -> &mut Option<Icon>`
+
+- `pub fn package_info_mut(&mut self) -> &mut tauri::api::PackageInfo`
+
+- [754c2e7](https://www.github.com/tauri-apps/tauri/commit/754c2e766abe25da053236ce311318aa1410d106) feat(core): finish mutable getters for `Context` ([#1814](https://www.github.com/tauri-apps/tauri/pull/1814)) on 2021-05-13
+
 ## \[1.0.0-beta.1]
 
 - Adds a mutable `config` getter on the `Context` struct.
